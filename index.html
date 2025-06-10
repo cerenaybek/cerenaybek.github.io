@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outfit Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h1>Outfit Recommender</h1>
+  <p>Enter your city and the hour you plan to go outside:</p>
+  <input type="text" id="cityInput" placeholder="e.g., London" />
+  <input type="number" id="hourInput" placeholder="e.g., 14" min="0" max="23" />
+  <br />
+  <button id="getRecommendationBtn">Get Outfit Recommendation</button>
+  <p id="loadingIndicator" style="display:none;">Fetching weather...</p>
+
+  <div id="resultSection" style="display:none;">
+    <p id="weatherInfo"></p>
+    <p id="outfitSuggestion"></p>
+    <button id="feedbackColdBtn">I felt cold</button>
+    <button id="feedbackHotBtn">I felt hot</button>
+    <p id="feedbackMessage"></p>
+  </div>
+</body>
+</html>
